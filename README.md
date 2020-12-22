@@ -11,7 +11,7 @@ Build the jar by running mvn install and copy the jar to keycloak's deployment f
 ${KEYCLOAK_HOME}/standalone/deployments
 ```
 
-> Keycloak support hot deployment so as soon jar file copied to above location it will create <jar name>.deployed file. <br>
+> Keycloak support hot deployment so as soon jar file copied to above location it will create **<jar-name>.deployed** file. <br>
 > Once application deployed correctly it will be added to keycloak server and visible under `server Info > providers` details.
 
 ## Testing
