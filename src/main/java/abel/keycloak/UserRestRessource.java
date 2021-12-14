@@ -65,7 +65,7 @@ public class UserRestRessource {
         if (auth == null) {
             throw new NotAuthorizedException("Bearer");
         } else if (auth.getToken().getRealmAccess() == null || !auth.getToken().getRealmAccess().isUserInRole("fetch_users")) {
-            throw new ForbiddenException("Does not have realm admin role");
+            throw new ForbiddenException("Does not have permission to fetch users");
         }
     }
 }
